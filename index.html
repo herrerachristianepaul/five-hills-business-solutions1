@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f8f2">
+    <meta name="description" content="Five Hills Business Solutions LLC is a Killeen, Texas-based business consultancy and advisory firm offering strategic business consulting, commercial and capital advisory, investment and real estate strategy, and operational solutions across Central Texas.">
+    <title>Five Hills Business Solutions LLC | Central Texas Business Consultancy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="navigation page-shell" aria-label="Main navigation">
+        <a class="brand" href="#home">
+          <img src="./assets/logos/logo.png" alt="Five Hills Business Solutions LLC" width="140" height="70">
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
+          <i class="ph ph-list" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-menu" id="primary-menu">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#reviews">Reviews</a>
+          <a class="button button-small button-primary nav-cta" href="#property-form">Get a Cash Offer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero-section" id="home" aria-labelledby="hero-title">
+        <div class="hero-wash hero-wash-one" aria-hidden="true"></div>
+        <div class="hero-wash hero-wash-two" aria-hidden="true"></div>
+        <div class="hero-layout page-shell">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="eyebrow-line"></span>Real Estate Investment Services</p>
+            <h1 id="hero-title">WE BUY HOUSES <span>FOR CASH</span></h1>
+            <p class="hero-lead">Sell Your House As-Is Without Repairs, Showings, or the Traditional Listing Process.</p>
+            <p class="hero-description">Five Hills Business Solutions provides straightforward real estate solutions for homeowners, property owners, and investors. We work directly with property owners to explore options based on their individual circumstances.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#property-form">Get Your Cash Offer <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+              <!-- Replace the empty tel: destination once a company phone number is available. -->
+              <a class="button button-outline" href="tel:" aria-label="Call us today; phone number to be added">Call Us Today <i class="ph ph-phone" aria-hidden="true"></i></a>
+            </div>
+            <div class="hero-note">
+              <span class="note-icon"><i class="ph ph-chat-circle-dots" aria-hidden="true"></i></span>
+              <p>A straightforward conversation about your property and possible next steps.</p>
+            </div>
+          </div>
+
+          <div class="form-card-wrap reveal">
+            <div class="form-decoration" aria-hidden="true">
+              <span class="decoration-circle"></span>
+              <span class="decoration-line decoration-line-one"></span>
+              <span class="decoration-line decoration-line-two"></span>
+            </div>
+            <form class="lead-form" id="property-form" novalidate>
+              <div class="form-heading">
+                <span class="form-icon" aria-hidden="true"><i class="ph ph-house" ></i></span>
+                <div>
+                  <p class="form-kicker">Start with a few details</p>
+                  <h2>Tell Us About Your Property</h2>
+                </div>
+              </div>
+              <p class="form-description">Share a few details about your property to start the conversation.</p>
+
+              <div class="field-grid">
+                <div class="form-field">
+                  <label for="first-name">First Name</label>
+                  <input id="first-name" name="firstName" type="text" autocomplete="given-name" required>
+                </div>
+                <div class="form-field">
+                  <label for="last-name">Last Name</label>
+                  <input id="last-name" name="lastName" type="text" autocomplete="family-name" required>
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="form-field field-full">
+                  <label for="address">Property Address</label>
+                  <input id="address" name="address" type="text" autocomplete="street-address" required>
+                </div>
+                <div class="form-field field-full">
+                  <label for="situation">Property Situation</label>
+                  <select id="situation" name="situation" required>
+                    <option value="" selected disabled>Select a situation</option>
+                    <option>Sell My House Fast</option>
+                    <option>Sell My House As-Is</option>
+                    <option>Inherited Property</option>
+                    <option>Distressed Property</option>
+                    <option>Vacant Property</option>
+                    <option>Rental Property</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <button class="button button-primary form-submit" type="submit">Get My Cash Offer <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+              <p class="form-privacy"><i class="ph ph-lock-simple" aria-hidden="true"></i> This demo form does not transmit or store your information.</p>
+              <p class="form-message" id="form-message" role="status" aria-live="polite" tabindex="-1" hidden></p>
+            </form>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#situations" aria-label="Scroll to property situations"><i class="ph ph-arrow-down" aria-hidden="true"></i></a>
+      </section>
+
+      <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="eyebrow-line"></span>About Us</p>
+            <h2 id="about-title">About Five Hills Business Solutions LLC</h2>
+          </div>
+
+          <div class="about-intro-grid">
+            <div class="about-intro-copy reveal">
+              <p class="eyebrow"><span class="eyebrow-line"></span>Who We Are</p>
+              <p>Rooted in Central Texas, Five Hills Business Solutions LLC—evolving from the strong foundation of Five Hills Investing—is a full-service business consultancy and advisory firm based in Killeen, Texas. Founded and led by Eugene Alexander, our firm is dedicated to equipping entrepreneurs, small-to-midsize business owners, and commercial operators with the strategic insight, practical resources, and execution needed to achieve sustainable growth.</p>
+              <p>What began with a sharp focus on real estate investment and capital strategy has naturally expanded. As our clients' needs evolved, so did we. Today, Five Hills Business Solutions LLC delivers comprehensive end-to-end guidance, helping businesses streamline operations, access capital, optimize resources, and navigate complex market landscapes.</p>
+            </div>
+            <aside class="mission-card reveal" aria-labelledby="mission-title">
+              <span class="mission-icon" aria-hidden="true"><i class="ph ph-compass"></i></span>
+              <p class="eyebrow">Our Mission</p>
+              <h3 id="mission-title">Actionable Business Solutions. Sustainable Growth.</h3>
+              <p>To deliver actionable, high-impact business solutions that empower local and regional enterprises to build equity, operate efficiently, and achieve long-term financial independence.</p>
+            </aside>
+          </div>
+
+          <div class="about-subsection">
+            <div class="section-heading reveal">
+              <p class="eyebrow"><span class="eyebrow-line"></span>What We Do</p>
+              <h3>From Strategic Vision to Daily Execution</h3>
+              <p>We bridge the gap between strategic vision and daily execution. Our core practice areas include:</p>
+            </div>
+            <div class="about-services-grid" id="services">
+              <article class="situation-card reveal">
+                <span class="card-icon" aria-hidden="true"><i class="ph ph-lightbulb"></i></span>
+                <h4>Strategic Business Consulting</h4>
+                <p>Operational workflow assessment, organizational structuring, and scalable growth planning.</p>
+              </article>
+              <article class="situation-card reveal">
+                <span class="card-icon" aria-hidden="true"><i class="ph ph-chart-line-up"></i></span>
+                <h4>Commercial &amp; Capital Advisory</h4>
+                <p>Assisting business owners in understanding funding avenues, balance-sheet positioning, and sound asset allocation.</p>
+              </article>
+              <article class="situation-card reveal">
+                <span class="card-icon" aria-hidden="true"><i class="ph ph-buildings"></i></span>
+                <h4>Investment &amp; Real Estate Strategy</h4>
+                <p>Leveraging deep Central Texas market knowledge to help business owners make informed commercial property and investment decisions.</p>
+              </article>
+              <article class="situation-card reveal">
+                <span class="card-icon" aria-hidden="true"><i class="ph ph-gear-six"></i></span>
+                <h4>Operational Solutions</h4>
+                <p>Practical frameworks, standard operating procedures, and compliance support to keep modern enterprises agile and resilient.</p>
+              </article>
+            </div>
+          </div>
+
+          <section class="leadership-panel reveal" aria-labelledby="leadership-title">
+            <div class="leadership-mark" aria-hidden="true"><i class="ph ph-briefcase"></i></div>
+            <div class="leadership-copy">
+              <p class="eyebrow"><span class="eyebrow-line"></span>Leadership</p>
+              <h3 id="leadership-title">Eugene Alexander</h3>
+              <p class="leadership-role">Founder &amp; Managing Partner</p>
+              <p>As the Founder and Managing Partner, Eugene Alexander brings years of direct market experience, business discipline, and strategic vision to Five Hills Business Solutions LLC. With deep roots across the Killeen, Fort Cavazos (Fort Hood), and Greater Bell County communities, Eugene founded the original Five Hills Investing with a clear principle: disciplined strategy creates lasting value.</p>
+              <p>Eugene’s hands-on approach centers on partnership and accountability. Whether guiding a startup through its initial structuring phase or advising established companies on scaling their operations, Eugene works alongside leadership teams to demystify complex business challenges and drive measurable outcomes.</p>
+            </div>
+          </section>
+
+          <div class="about-subsection difference-subsection">
+            <div class="section-heading reveal">
+              <p class="eyebrow"><span class="eyebrow-line"></span>The Five Hills Difference</p>
+              <h3>A Practical, Regional, Relationship-Driven Approach</h3>
+            </div>
+            <div class="difference-grid">
+              <article class="situation-card reveal">
+                <span class="card-icon" aria-hidden="true"><i class="ph ph-map-trifold"></i></span>
+                <h4>Deep Regional Insight</h4>
+                <p>We understand the unique economic drivers of Central Texas, the Interstate 35 / Highway 190 corridor, and our community’s military and commercial ecosystem.</p>
+              </article>
+              <article class="situation-card reveal">
+                <span class="card-icon" aria-hidden="true"><i class="ph ph-list-checks"></i></span>
+                <h4>Practical, Real-World Focus</h4>
+                <p>We don’t deliver generic theories. We provide clear, executable action plans designed to generate immediate operational stability and measurable ROI.</p>
+              </article>
+              <article class="situation-card reveal">
+                <span class="card-icon" aria-hidden="true"><i class="ph ph-handshake"></i></span>
+                <h4>Relationship-Driven</h4>
+                <p>We measure our success solely by the longevity, profitability, and stability of the businesses we serve.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="about-cta reveal">
+            <div>
+              <h3>Ready to Build What’s Next?</h3>
+              <p>Whether you are refining your business model, restructuring for growth, or seeking strategic operational guidance, Five Hills Business Solutions LLC is your trusted partner on the ground.</p>
+            </div>
+            <a class="button button-primary" href="#property-form">Let's Talk <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="situations-section section-pad" id="situations" aria-labelledby="situations-title">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="eyebrow-line"></span>Property Situations</p>
+            <h2 id="situations-title">WE WORK WITH DIFFERENT <span>PROPERTY SITUATIONS</span></h2>
+            <p>Every property is different. We start by understanding the property and the circumstances surrounding the sale.</p>
+          </div>
+
+          <div class="situations-grid">
+            <article class="situation-card reveal">
+              <span class="card-icon" aria-hidden="true"><i class="ph ph-house"></i></span>
+              <h3>Sell Your House Fast</h3>
+              <p>Explore options for selling quickly and efficiently.</p>
+            </article>
+            <article class="situation-card reveal">
+              <span class="card-icon" aria-hidden="true"><i class="ph ph-wrench"></i></span>
+              <h3>Sell Your House As-Is</h3>
+              <p>You may be able to sell without repairs, renovations, or traditional showings.</p>
+            </article>
+            <article class="situation-card reveal">
+              <span class="card-icon" aria-hidden="true"><i class="ph ph-money"></i></span>
+              <h3>We Buy Houses for Cash</h3>
+              <p>Sell directly to a real estate investor without the traditional listing process.</p>
+            </article>
+            <article class="situation-card reveal">
+              <span class="card-icon" aria-hidden="true"><i class="ph ph-tree-structure"></i></span>
+              <h3>Inherited Property</h3>
+              <p>Explore options for an inherited home or property you no longer want to manage.</p>
+            </article>
+            <article class="situation-card reveal">
+              <span class="card-icon" aria-hidden="true"><i class="ph ph-buildings"></i></span>
+              <h3>Rental Property</h3>
+              <p>Discuss options for rental properties, including properties with tenants.</p>
+            </article>
+            <article class="situation-card reveal">
+              <span class="card-icon" aria-hidden="true"><i class="ph ph-buildings"></i></span>
+              <h3>Vacant Property</h3>
+              <p>Explore a straightforward option for an unused or vacant property.</p>
+            </article>
+          </div>
+
+          <div class="service-strip reveal" aria-label="Real estate investment services">
+            <span class="service-strip-title">Real Estate Investment Services</span>
+            <ul>
+              <li>Distressed property solutions</li>
+              <li>Problem property solutions</li>
+              <li>Off-market property purchases</li>
+              <li>Inherited property solutions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section section-pad" id="how-it-works" aria-labelledby="process-title">
+        <div class="process-shape" aria-hidden="true"></div>
+        <div class="page-shell process-content">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="eyebrow-line"></span>How It Works</p>
+            <h2 id="process-title">A SIMPLE WAY TO <span>EXPLORE YOUR OPTIONS</span></h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <span class="step-number">01</span>
+              <span class="step-rule" aria-hidden="true"></span>
+              <h3>Tell Us About Your Property</h3>
+              <p>Share the property address and a few details about your situation.</p>
+            </article>
+            <article class="step-card reveal">
+              <span class="step-number">02</span>
+              <span class="step-rule" aria-hidden="true"></span>
+              <h3>We Review the Property</h3>
+              <p>We review the property information and discuss the circumstances with you.</p>
+            </article>
+            <article class="step-card reveal">
+              <span class="step-number">03</span>
+              <span class="step-rule" aria-hidden="true"></span>
+              <h3>Explore Your Selling Options</h3>
+              <p>Review the available path and decide how you want to proceed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section section-pad" id="reviews" aria-labelledby="reviews-title">
+        <div class="page-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="eyebrow-line"></span>Reviews</p>
+            <h2 id="reviews-title">Reviews</h2>
+          </div>
+          <div class="reviews-placeholder reveal">
+            <span class="card-icon" aria-hidden="true"><i class="ph ph-chat-circle-text"></i></span>
+            <h3>Reviews Coming Soon</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta-section" id="contact" aria-labelledby="cta-title">
+        <div class="cta-orb cta-orb-one" aria-hidden="true"></div>
+        <div class="cta-orb cta-orb-two" aria-hidden="true"></div>
+        <div class="page-shell final-cta-content reveal">
+          <div>
+            <p class="eyebrow eyebrow-light">A clearer next step starts here</p>
+            <h2 id="cta-title">READY TO EXPLORE YOUR OPTIONS?</h2>
+            <p>Tell us about your property and start a straightforward conversation about what comes next.</p>
+          </div>
+          <a class="button button-light" href="#property-form">Get a Cash Offer <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-main">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="#home">
+            <img src="./assets/logos/logo.png" alt="Five Hills Business Solutions LLC" width="140" height="70">
+          </a>
+          <p class="footer-description">Strategic Solutions. Proven Growth. Central Texas</p>
+          <p class="footer-location">Killeen, Texas</p>
+        </div>
+        <nav class="footer-column" aria-label="Footer navigation">
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#property-form">Get a Cash Offer</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-column" aria-label="Legal">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="./terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-shell footer-bottom">
+        <p>© <span id="current-year"></span> Five Hills Business Solutions LLC. All rights reserved.</p>
+        <p>Strategic Solutions. Proven Growth. Central Texas</p>
+      </div>
+    </footer>
+  </body>
+</html>
