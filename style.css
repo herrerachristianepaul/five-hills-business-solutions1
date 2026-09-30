@@ -513,6 +513,51 @@ h2 {
   color: #758078;
 }
 
+.sms-consent {
+  padding: 12px 13px;
+  border: 1px solid #e3e9e2;
+  border-radius: 5px;
+  background: #f8fbf7;
+}
+
+.sms-consent-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sms-consent-control input {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin: 0;
+  accent-color: var(--green-dark);
+}
+
+.sms-consent-control label {
+  margin: 0;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.sms-consent p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+.sms-consent a {
+  color: var(--green-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sms-consent a:hover {
+  color: var(--ink);
+}
+
 .form-submit {
   width: 100%;
   min-height: 47px;
