@@ -548,14 +548,14 @@ h2 {
 }
 
 .sms-consent a {
-  color: var(--green-dark);
+  color: #1557a0;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .sms-consent a:hover {
-  color: var(--ink);
+  color: #0d3d75;
 }
 
 .form-submit {
