@@ -1116,7 +1116,7 @@ h2 {
   display: grid;
   align-items: start;
   gap: 32px;
-  grid-template-columns: minmax(230px, 1.4fr) minmax(170px, 1fr) minmax(150px, 0.8fr);
+  grid-template-columns: minmax(230px, 1.4fr) repeat(3, minmax(130px, 0.8fr));
   padding-top: 34px;
   padding-bottom: 29px;
 }
